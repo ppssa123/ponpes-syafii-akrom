@@ -12,18 +12,18 @@
   <link rel="icon" href="assets/img/logo-title.png" sizes="96x96" type="image/png" />
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180" />
 
-  <!-- Font dan CSS -->
-  <link href="https://fonts.googleapis.com" rel="preconnect" />
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Poppins:wght@100;300;400;500;700&family=Raleway:wght@100;300;400;500;700&display=swap"
     rel="stylesheet" />
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
-  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet" />
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/glightbox@3.0.0/dist/css/glightbox.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/swiper@6.8.4/swiper-bundle.min.css" rel="stylesheet" />
   <link href="assets/css/main.css" rel="stylesheet" />
 </head>
 
@@ -38,9 +38,9 @@
         <ul>
           <li><a href="#hero" class="active">Beranda</a></li>
           <li class="dropdown">
-            <a href="#"><span>Profile</span>
+            <a href="javascript:void(0);" class="dropdown-toggle"><span>Profile</span>
               <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
+            <ul class="dropdown-menu">
               <li><a href="#sejarah">Sejarah Singkat</a></li>
               <li><a href="#visimisi">Visi Misi</a></li>
               <li><a href="#identitas">Identitas</a></li>
@@ -49,20 +49,26 @@
             </ul>
           </li>
           <li class="dropdown">
-            <a href="#"><span>Jenjang Pendidikan</span>
+            <a href="javascript:void(0);" class="dropdown-toggle"><span>Jenjang Pendidikan</span>
               <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="https://www.instagram.com/smpsainsca/profilecard/?igsh=cmVlbDI3Ym82MWs1">SMP Sains Cahaya Al-Qur'an</a></li>
-              <li><a href="https://www.instagram.com/smascakotapkl/profilecard/?igsh=MW51azB3cnA0NGl1bg==">SMA Sains Cahaya Al-Qur'an</a></li>
-              <li><a href="https://www.instagram.com/smksapekalongan/profilecard/?igsh=MWEzbHBqZ210bWd2bg==">SMK Syafi'i Akrom</a></li>
+            <ul class="dropdown-menu">
+              <li><a href="https://www.instagram.com/smpsainsca/profilecard/?igsh=cmVlbDI3Ym82MWs1">SMP Sains Cahaya
+                  Al-Qur'an</a></li>
+              <li><a href="https://www.instagram.com/smascakotapkl/profilecard/?igsh=MW51azB3cnA0NGl1bg==">SMA Sains
+                  Cahaya Al-Qur'an</a></li>
+              <li><a href="https://www.instagram.com/smksapekalongan/profilecard/?igsh=MWEzbHBqZ210bWd2bg==">SMK Syafi'i
+                  Akrom</a></li>
               <li><a href="#features">Madrasah Diniyah</a></li>
             </ul>
           </li>
           <li><a href="#portfolio">Album Kegiatan</a></li>
           <li><a href="#contact">Kontak</a></li>
         </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
+
+      <button class="mobile-nav-toggle">
+        <i class="fas fa-bars"></i>
+      </button>
     </div>
   </header>
   <main class="main">
@@ -211,7 +217,6 @@
                   <li>Unggul dalam disiplin madrasah</li>
                   <li>Unggul dalam kepedulian sosial</li>
                   <li>Unggul dalam berkreasi seni</li>
-                  <li>Unggul dalam pencapaian UN</li>
                 </ul>
               </div>
             </section>
@@ -292,7 +297,7 @@
           </div>
 
           <div class="content-container">
-            <div class="col-lg-4 content" data-aos="fade-up" data-aos-delay="200">
+            <div class="col-12 col-sm-6 content" data-aos="fade-up" data-aos-delay="200">
               <h3>Sarana dan Prasarana</h3>
               <br />
               <ul>
@@ -336,7 +341,7 @@
               </ul>
             </div>
 
-            <div class="col-lg-4 content" style="margin-top: 45px;" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-12 col-sm-6 content" style="margin-top: 45px;" data-aos="fade-up" data-aos-delay="100">
               <ul>
                 <li>
                   <i class="bi bi-check2-circle"></i>
@@ -485,14 +490,16 @@
 
     <!-- Prestasi Section -->
     <section id="prestasi" class="section">
-      <!-- Section Title -->
+      <!-- Judul Section -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Prestasi Kami</h2>
         <p>Akademik dan Non-Akademik</p>
       </div>
-      <!-- End Section Title -->
+      <!-- Akhir Judul Section -->
 
-      <div class="container prestasi-container">
+      <!-- Kontainer untuk gambar-gambar yang bisa digeser -->
+      <div class="container prestasi-container" id="prestasi-container">
+        <!-- Card Prestasi -->
         <div class="prestasi-card" data-aos="fade-up" data-aos-delay="500">
           <img src="assets/img/prestasi/helmi.jpg" alt="Juara Daur Ulang" />
           <span>2024: Juara 1 Kreasi Daur Ulang Sampah</span>
@@ -572,6 +579,15 @@
           <span>2024: Juara 2 Kejurkab Pekalongan Pencak Silat Pagar Nusa</span>
         </div>
       </div>
+
+      <div class="btn-geser">
+        <button id="scroll-left" class="btn-for-left">
+          <i class="bi bi-arrow-left-circle"></i>
+        </button>
+        <button id="scroll-right" class="btn-for-right">
+          <i class="bi bi-arrow-right-circle"></i>
+        </button>
+      </div>
     </section>
     <!-- /Prestasi Section -->
 
@@ -594,7 +610,7 @@
           </p><br>
           <li class="nav-item col-3">
             <a class="nav-link active" data-bs-toggle="tab" data-bs-target="#features-tab-1">
-              <h4 style="text-align: center; font-weight: bold;">Tingkat "I'DADIYAH" (Kelas Persiapan)</h4>
+              <h4 style="text-align: center; font-weight: bold;">Tingkat "I'DADIYAH"</h4>
             </a>
           </li>
           <li class="nav-item col-3">
@@ -993,6 +1009,18 @@
               </div>
               <!-- End Portfolio Item -->
 
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+                <img src="assets/img/masonry-portfolio/ngaji13.jpg" class="img-fluid" alt="" />
+                <div class="portfolio-info">
+                  <h4>Foto Bersama Maulana Habib Luthfi bin Yahya</h4>
+                  <p>Sowan Pengasuh ke Ndalem Maulana Habib Luthfi bin Ali bin Hasyim bin Yahya</p>
+                  <a href="assets/img/masonry-portfolio/ngaji13.jpg" title="Pembacaan Maulid Memperingati Isra' Mi'raj"
+                    data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i
+                      class="bi bi-zoom-in"></i></a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
               <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
                 <img src="assets/img/masonry-portfolio/ekstra7.jpg" class="img-fluid" alt="" />
                 <div class="portfolio-info">
@@ -1323,13 +1351,13 @@
   <!-- Preloader -->
   <div id="preloader"></div>
 
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/validator@13.6.0/dist/validator.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/glightbox@3.0.0/dist/js/glightbox.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@4.1.4/imagesloaded.pkgd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@6.8.4/swiper-bundle.min.js"></script>
 
   <script src="assets/js/main.js"></script>
 
